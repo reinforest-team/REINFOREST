@@ -57,7 +57,6 @@ models = {
     # 'babbage': 'babbage-code-search-code',
     # 'curie': 'curie-similarity',
     # 'davinci': 'davinci-similarity',
-    'ada_002': 'text-embedding-ada-002'
 }
 
 for model_name, model in models.items():
