@@ -2,7 +2,7 @@
 
 if [[ $# -lt 4 ]]; then
     echo "Must provide at least four arguments";
-    echo "bash train.sh <exp_name> <dataset java/python> <data_type with/wo semantic> <initial_model> [codex_model_name]";
+    echo "bash rank.sh <exp_name> <dataset java/python> <alpha "0" for no SSS> <initial_model> [codex_model_name]";
     exit;
 fi
 
