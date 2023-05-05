@@ -9,7 +9,7 @@ function setup_repo() {
 }
 
 function create_and_activate() {
-    conda create --name reinforest python=3.6;
+    conda create --name reinforest python=3.9;
     conda activate reinforest;
 }
 
