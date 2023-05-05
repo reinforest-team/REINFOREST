@@ -15,5 +15,3 @@ conda activate reinforest;
 ```
 bash setup.sh
 ```
-
-## Use the data as divided in [trial_1_data](data/atcoder/trial_1_data)
