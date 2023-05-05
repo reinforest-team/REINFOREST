@@ -2,7 +2,7 @@
 
 if [[ $# -lt 4 ]]; then
     echo "Must provide at least four arguments";
-    echo "bash train.sh <exp_name> <dataset java/python> <data_type with/wo semantic> <initial_model> [codex_model_name]";
+    echo "bash train.sh <exp_name> <dataset java/python> <alpha "0" for no SSS> <initial_model> [codex_model_name]";
     exit;
 fi
 
@@ -69,7 +69,6 @@ mkdir -p $output_path;
 mkdir -p $log_dir;
 mkdir -p $ranking_output_path;
 
-# echo "python $project_dir/source/main.py --exp_name $exp_name --training_config $config_path --data_path $data_path --output_dir $output_path --initial_model $initial_model --data_cache_path $data_cache_path --seed $seed $reload_args 2>&1 | tee $log_file;"
 python $project_dir/source/main.py \
     --exp_name $exp_name \
     --training_config $config_path \
